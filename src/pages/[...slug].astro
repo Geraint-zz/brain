@@ -8,8 +8,8 @@ export function getStaticPaths() {
 }
 const route = Astro.params.slug ?? '';
 const parts = route.split('/');
-const kind = parts[0];
-const slug = parts[1] ?? '';
+const kind = parts.length > 1 ? parts[0] : 'legal';
+const slug = parts[1] ?? parts[0] ?? '';
 const section = sections.find((x) => x.slug === slug);
 const category = categories.find((x) => x.slug === slug);
 const post = posts.find((x) => x.slug === slug);
