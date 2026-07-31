@@ -1,0 +1,38 @@
+[
+    {
+        "slug":  "memory",
+        "section_slug":  "everyday-cognitive-health"
+    },
+    {
+        "slug":  "focus",
+        "section_slug":  "everyday-cognitive-health"
+    },
+    {
+        "slug":  "brain-health-habits",
+        "section_slug":  "everyday-cognitive-health"
+    },
+    {
+        "slug":  "thinking-skills",
+        "section_slug":  "everyday-cognitive-health"
+    },
+    {
+        "slug":  "students",
+        "section_slug":  "audience-programs"
+    },
+    {
+        "slug":  "workplace",
+        "section_slug":  "audience-programs"
+    },
+    {
+        "slug":  "older-adults",
+        "section_slug":  "audience-programs"
+    },
+    {
+        "slug":  "brain-training-tools",
+        "section_slug":  "tools-reviews"
+    },
+    {
+        "slug":  "industry-research",
+        "section_slug":  "research-industry"
+    }
+]

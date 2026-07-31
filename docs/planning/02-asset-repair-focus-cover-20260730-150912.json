@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "02",
+    "site_id":  "brain",
+    "status":  "ASSET_REPAIR_PASS",
+    "repaired_at":  "2026-07-30T07:09:13.7742442Z",
+    "user_authorization":  "开始修复",
+    "issue":  "Approved local focus-cover.png was corrupted by binary-to-text conversion before implementation.",
+    "replacement_source":  "C:\\Users\\aoemo\\Documents\\Article\\content\\news\\brain-health\\brain-health-public-guides-2026-07-29\\how-to-focus-better\\images\\how-to-focus-better-cover.png",
+    "replacement_sha256":  "C0DC14DF50413172D551DF785A59D542EDC598B9ECBA254A68FCE4BA54C779F4",
+    "replacement_dimensions":  "1254x1254",
+    "targets":  [
+                    "design-candidates\\skill02-brian-v3-internal-optimization\\stitch_brian_visual_prototype_framework\\assets\\images\\focus-cover.png",
+                    "public\\assets\\images\\focus-cover.png"
+                ],
+    "new_visual_source_zip":  "C:\\Users\\aoemo\\Documents\\Brian\\visual-sources\\brain-approved-production-source-skill02-brain-20260730-150912-asset-repair.zip",
+    "new_visual_source_zip_sha256":  "840789003C2E67365676A7A2184107DE5187DD88A6D265CDF483F09F9938580E",
+    "validation":  {
+                       "build_required":  true,
+                       "png_signature_valid":  true,
+                       "system_decoder":  "pass"
+                   }
+}

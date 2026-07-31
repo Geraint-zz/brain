@@ -1,0 +1,34 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "02",
+    "run_id":  "skill02-brain-20260730-144422",
+    "site_id":  "brain",
+    "site_name":  "Brain",
+    "status":  "USER_VISUAL_APPROVAL_RECORDED",
+    "visual_lifecycle_stage":  "ASSET_LOCALIZATION",
+    "approved_by_user":  true,
+    "approval_evidence":  {
+                              "source":  "user_message",
+                              "text":  "可锁定生成视觉",
+                              "recorded_at":  "2026-07-30T06:44:48.2694763Z"
+                          },
+    "candidate_archive_path":  "C:\\Users\\aoemo\\Documents\\Brian\\design-candidates\\archives\\brain-visual-architecture-skill02-brain-20260730-144422.zip",
+    "candidate_archive_sha256":  "E79B1DD0BD22A79B9DAD101297ED4925D0030396D2AD3FC606B5C84425536702",
+    "approved_visual_identity_summary":  "Modern editorial-research system: warm paper, deep teal, mist sage, restrained terracotta, Playfair Display display type, Source Sans 3 UI/body, mobile-first hierarchy.",
+    "approved_logo_type":  "text_wordmark: Brain",
+    "page_coverage":  [
+                          "homepage desktop",
+                          "homepage mobile",
+                          "section landing",
+                          "category hub",
+                          "post mobile",
+                          "legal layout"
+                      ],
+    "production_source_lock":  false,
+    "blockers":  [
+                     "Localize all remote fonts, icons, and images",
+                     "Create final local asset manifest"
+                 ],
+    "next_state":  "ASSET_LOCALIZATION",
+    "screenshot_evidence_skip_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\02-screenshot-evidence-skip-skill02-brain-20260730-144422.json"
+}

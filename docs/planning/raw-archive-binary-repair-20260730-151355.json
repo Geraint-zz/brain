@@ -1,0 +1,16 @@
+﻿{
+    "schema_version":  "v1",
+    "site_id":  "brain",
+    "status":  "RAW_ARCHIVE_BINARY_REPAIR_PASS",
+    "repaired_at":  "2026-07-30T07:13:55.9342861Z",
+    "user_authorization":  "开始修复",
+    "source":  "C:\\Users\\aoemo\\Documents\\Article\\content\\news\\brain-health",
+    "target":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\original",
+    "robocopy_exit_code":  1,
+    "source_file_count":  60,
+    "target_file_count":  60,
+    "file_hash_mismatch_count":  0,
+    "missing_file_count":  0,
+    "pre_repair_target_file_count":  60,
+    "method":  "binary-safe robocopy overwrite, no deletion"
+}

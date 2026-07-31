@@ -1,0 +1,18 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "02",
+    "site_id":  "brain",
+    "status":  "PASS_SKILL02_LIGHT_BLUE_VISUAL_LOCK",
+    "locked_at":  "2026-07-30T07:11:29.0941668Z",
+    "user_approval":  "可通过验证锁定",
+    "approved_revision_record":  "docs\\planning\\02-visual-palette-revision-light-blue-20260730-151030.json",
+    "visual_source_zip":  "C:\\Users\\aoemo\\Documents\\Brian\\visual-sources\\brain-approved-production-source-skill02-brain-20260730-151030-light-blue.zip",
+    "visual_source_sha256":  "42C851524683E8C1E1B6E2F075B8BF88F2487DBEB1C6C1E2E9F42F4C52AFFAA3",
+    "validation":  {
+                       "remote_dependency_count":  0,
+                       "build_artifact_present":  true,
+                       "focus_cover_png_signature_valid":  true,
+                       "focus_cover_dimensions":  "1254x1254"
+                   },
+    "scope_note":  "Locks the light-blue palette revision. Skill 03 local UI approval remains a separate gate."
+}

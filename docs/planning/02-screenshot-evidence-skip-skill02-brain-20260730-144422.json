@@ -1,0 +1,25 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "02",
+    "run_id":  "skill02-brain-20260730-144422",
+    "site_id":  "brain",
+    "stage":  "USER_VISUAL_APPROVAL",
+    "skipped_requirement":  "Regenerate screenshot evidence from v3 HTML",
+    "status":  "SKIP_USER_APPROVED",
+    "approval_evidence":  {
+                              "source":  "user_message",
+                              "text":  "第一步可跳过",
+                              "recorded_at":  "2026-07-30T06:47:27.7347821Z"
+                          },
+    "scope":  "Screenshot regeneration only",
+    "not_skipped":  [
+                        "Asset localization",
+                        "Local asset manifest",
+                        "Production source lock",
+                        "Implementation",
+                        "Build",
+                        "Admin import",
+                        "Launch"
+                    ],
+    "impact":  "No screenshot manifest will be asserted for the current production source lock."
+}

@@ -1,0 +1,16 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "05",
+    "site_id":  "brain",
+    "run_id":  "skill05-brain-20260730-1521",
+    "status":  "PASS_PACKAGE_READY_FOR_ADMIN_IMPORT",
+    "package_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\packages\\brain-initial-content-package-skill05-brain-20260730-1519.zip",
+    "package_sha256":  "41337F716A7186D5AB3B20418B8084A14DC4737F51D778F2A2A55F0A34F1073E",
+    "article_count":  20,
+    "media_count":  40,
+    "legal_verified":  true,
+    "admin_accessed":  false,
+    "upload_performed":  false,
+    "next_stage":  "06 initial_admin_import",
+    "required_next_human_gate":  "Admin Preview/Apply approval"
+}

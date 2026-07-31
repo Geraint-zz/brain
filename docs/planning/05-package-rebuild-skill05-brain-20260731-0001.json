@@ -1,0 +1,13 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "05",
+    "site_id":  "brain",
+    "run_id":  "skill05-brain-20260731-0001",
+    "mode":  "controlled_package_only_rebuild",
+    "status":  "PASS_PACKAGE_READY_FOR_ADMIN_IMPORT",
+    "package_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\packages\\brain-initial-content-package-skill05-brain-20260731-0001.zip",
+    "package_sha256":  "5C3E19F3F6865435C0F75CD891BF91A2564E139AA5A82940C23DBC4D6EC91A4C",
+    "manifest_files_count":  63,
+    "content_changed":  false,
+    "next_stage":  "06 initial_admin_import"
+}

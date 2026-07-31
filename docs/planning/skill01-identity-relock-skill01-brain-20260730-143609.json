@@ -1,0 +1,25 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "01",
+    "run_id":  "skill01-brain-20260730-143609",
+    "site_id":  "brain",
+    "site_name":  "Brain",
+    "previous_site_id":  "brian",
+    "archive_batch_id":  "brain-20260730-143609",
+    "status":  "CURRENT",
+    "reason":  "Explicit user-approved identity and wordmark change",
+    "updated_authority_paths":  [
+                                    "docs/site-blueprint/01-site-blueprint-seo-geo-map-v1.md",
+                                    "prototypes/01-homepage-wireframe-v1.html",
+                                    "docs/planning/legal-pages-draft-v1.md",
+                                    "docs/planning/legal-pages-manifest-v1.json",
+                                    "docs/planning/content-time-policy-v1.json",
+                                    "docs/site-blueprint/seo-geo-execution-manifest-v1.json",
+                                    "docs/site-blueprint/skill01-output-manifest-v1.json",
+                                    "imports/raw-content/original/",
+                                    "imports/raw-content/raw-content-original-manifest-v1.md"
+                                ],
+    "next_stage":  "Skill 02 candidate revision required",
+    "timestamp":  "2026-07-30T06:37:33.9828240Z"
+}
+

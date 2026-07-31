@@ -1,0 +1,41 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "01",
+    "run_id":  "skill01-brian-20260730-113950",
+    "created_at":  "2026-07-30T03:48:29.4178427Z",
+    "status":  "PASS",
+    "previewed":  [
+                      {
+                          "path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\.skill01b-extract-skill01-brian-20260730-113950",
+                          "action":  "DELETE_SAFE",
+                          "reason":  "Unique ZIP extraction temp after verified copy"
+                      }
+                  ],
+    "archived":  [
+
+                 ],
+    "deleted":  [
+                    {
+                        "path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\.skill01b-extract-skill01-brian-20260730-113950",
+                        "action":  "DELETED",
+                        "reason":  "Exact temporary extraction path deleted after successful copy and validation"
+                    }
+                ],
+    "skipped":  [
+
+                ],
+    "manual_review":  [
+
+                      ],
+    "git_tracked_deletion_count":  0,
+    "artifact_storage_report":  {
+                                    "created_file_count":  13,
+                                    "created_bytes":  0,
+                                    "retained_file_count":  9,
+                                    "retained_bytes":  0,
+                                    "safe_deleted_file_count":  1,
+                                    "safe_deleted_bytes":  0,
+                                    "review_required_count":  0
+                                }
+}
+

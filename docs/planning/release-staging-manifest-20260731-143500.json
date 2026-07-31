@@ -1,0 +1,68 @@
+{
+  "schema_version": "v1",
+  "skill_id": "07",
+  "site_id": "brain",
+  "run_id": "20260731-143500",
+  "execution_mode": "first_launch",
+  "project_root": "C:\\Users\\aoemo\\Documents\\Brian",
+  "release_status": "BLOCKED_GIT_REPOSITORY",
+  "upstream_handoff": {
+    "skill06_artifact_persisted": false,
+    "codex_local_validation": "PASS",
+    "downstream_handoff_allowed": false,
+    "reason": "Skill 06 Preview remains blocked by Admin capability error: localeCompare"
+  },
+  "production_baseline": {
+    "contract_path": "docs/planning/effective-project-contract-v1.json",
+    "contract_status": "CURRENT",
+    "structure_match": true,
+    "validate_data": "PASS",
+    "astro_check": "PASS",
+    "astro_build": "PASS",
+    "built_routes": 38
+  },
+  "release_allowed_files": [],
+  "release_blocked_files": [],
+  "review_required_files": [],
+  "staged_files": [],
+  "staged_file_count": 0,
+  "staged_matches_allowlist": false,
+  "missing_allowed_staged_count": 0,
+  "extra_staged_count": 0,
+  "forbidden_staged_count": 0,
+  "protected_data_diff_count": 0,
+  "protected_data_staged_count": 0,
+  "local_blocked_artifacts_present": true,
+  "local_blocked_artifacts_preserved": true,
+  "local_blocked_artifacts_block_commit": false,
+  "local_qa_pass": true,
+  "commit_authorization_received": true,
+  "commit_ready_for_user_approval": false,
+  "blocking_reasons": [
+    "No .git repository exists at the exact project_root; commit/push cannot be performed safely.",
+    "Skill 06 Admin Preview/Apply handoff is not PASS; Preview is blocked by localeCompare capability error.",
+    "Cloudflare Pages project identity and authentication are not discovered or locked.",
+    "Formal production domain is pending; dual-origin production DOM parity cannot be executed."
+  ],
+  "git": {
+    "repository_present": false,
+    "remote": "https://github.com/Geraint-zz/brain.git",
+    "branch": null,
+    "head": null,
+    "staging_performed": false,
+    "commit_performed": false,
+    "push_performed": false,
+    "broad_add_commands_used": false
+  },
+  "cloudflare": {
+    "project": null,
+    "authentication": "NOT_DISCOVERED",
+    "pages_dev": null,
+    "formal_domain": null,
+    "deployment": "NOT_REQUESTED_DUE_TO_BLOCKERS",
+    "production_dom_parity": "NOT_RUN"
+  },
+  "output_path_contract_version": "site-factory-output-path-contract-v1",
+  "next_stage": "BLOCKED_GIT_REPOSITORY",
+  "resume_token": "skill07-first-launch-blocked-20260731-143500"
+}

@@ -1,0 +1,33 @@
+﻿[
+    {
+        "path":  "brian_article_focus_routine_mobile_revised\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "05C3147D474E828AFDB779CCAC54FC573131872AB5E1160D8521281C57412BB3"
+    },
+    {
+        "path":  "brian_category_focus_thinking_desktop\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "2F40FB993B7BD8B40E88B9A91FAA76F06FBCB7D17DBC8DD32CFC3C8FBE45A579"
+    },
+    {
+        "path":  "brian_homepage_desktop_revised\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "B156816DA2A80B1406C7F892E8ED350FCED743CBF93C30A36F9FD3EE127B9560"
+    },
+    {
+        "path":  "brian_homepage_mobile_revised\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "50EA0DF757C103DEEB77A96D7B610009EE876615BC62DEFA97867B5F138E50E1"
+    },
+    {
+        "path":  "brian_legal_trust_layout_desktop\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "8BCD7115AA8B1292B2FED998CE8B084AF757AB6D9FEE3AD24CECE164B962DE72"
+    },
+    {
+        "path":  "brian_section_everyday_cognitive_health_desktop\\code.html",
+        "blocked_literal_count":  0,
+        "sha256":  "340270985C74FAA7EDB792D40DE71DD9CBCEF372E1609AAF179156CCDD469C6F"
+    }
+]
+

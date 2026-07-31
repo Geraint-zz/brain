@@ -1,0 +1,295 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "04",
+    "site_id":  "brain",
+    "run_id":  "skill04-brain-20260730-1518",
+    "preflight":  {
+                      "skill01_seo_geo_manifest_found":  true,
+                      "skill04_handoff_pass":  true,
+                      "skill04_data_contract_found":  true,
+                      "content_time_policy_found":  true,
+                      "skill01_blueprint_found":  true,
+                      "original_raw_content_found":  true
+                  },
+    "content_summary":  {
+                            "prepared_article_count":  20,
+                            "warning_count":  0,
+                            "body_format_counts":  {
+                                                       "html":  20
+                                                   },
+                            "hierarchy_error_count":  0,
+                            "seo_geo_error_count":  0,
+                            "unique_slug_count":  20,
+                            "needs_review_count":  0,
+                            "ready_count":  20,
+                            "source_article_count":  20
+                        },
+    "time_summary":  {
+                         "article_count":  20,
+                         "unique_published_at_count":  20,
+                         "future_dates_count":  0,
+                         "same_timestamp_count":  0,
+                         "invalid_updated_at_count":  0,
+                         "capacity_status":  "OK",
+                         "publish_anchor_date":  "2026-07-30",
+                         "window_start":  "2026-07-11",
+                         "window_end":  "2026-07-30"
+                     },
+    "legal_summary":  {
+                          "placeholder_count":  0,
+                          "irrelevant_clause_count":  0,
+                          "required_page_count":  4,
+                          "ready_page_count":  4
+                      },
+    "media_summary":  {
+                          "needs_review_count":  0,
+                          "prepared_image_count":  40,
+                          "missing_referenced_image_count":  0,
+                          "closing_image_count":  20,
+                          "article_count":  20,
+                          "featured_image_count":  20,
+                          "placeholder_count":  0
+                      },
+    "outputs":  [
+                    {
+                        "artifact_id":  "skill04-0",
+                        "relative_path":  "imports/raw-content/current",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\current",
+                        "size_bytes":  1,
+                        "sha256":  null,
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-1",
+                        "relative_path":  "imports/raw-content/raw-content-intake-manifest-v1.md",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\raw-content-intake-manifest-v1.md",
+                        "size_bytes":  220,
+                        "sha256":  "CAAC97447744108316734297BB2C48F1BBD729861EE957FB4E5A19D5C00BE3D9",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-2",
+                        "relative_path":  "content-prep/prepared-content/articles.json",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\articles.json",
+                        "size_bytes":  132900,
+                        "sha256":  "154A4158375289143AAFD9560223CE6091411D9728C8A631972D64AE7A8E5F2B",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-3",
+                        "relative_path":  "content-prep/prepared-content/media-manifest.json",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\media-manifest.json",
+                        "size_bytes":  9391,
+                        "sha256":  "58AA677A58CE4A4DCCED8E81345697379F5D99FEF10CFD6271FA9B385EDBD3FA",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-4",
+                        "relative_path":  "content-prep/time-generation-report-v1.md",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-report-v1.md",
+                        "size_bytes":  144,
+                        "sha256":  "B1A3CCDE40365C53B2760035871CFFFECBAFE6430C69F5D7385765F9DA91C823",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-5",
+                        "relative_path":  "content-prep/time-generation-summary-v1.json",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-summary-v1.json",
+                        "size_bytes":  319,
+                        "sha256":  "B041F58932DAD27E0AA45E791D9A4BCBBDB7EEA4A896FB2C5E7D39E4A02CC1C9",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-6",
+                        "relative_path":  "docs/planning/content-seo-geo-naming-package-report-v1.md",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\content-seo-geo-naming-package-report-v1.md",
+                        "size_bytes":  207,
+                        "sha256":  "4B2AC925A65DBB4BAE52E052A800FE9FB2D850C1A53AA123E5E6DDBA01FB361F",
+                        "lifecycle_status":  "CURRENT"
+                    },
+                    {
+                        "artifact_id":  "skill04-7",
+                        "relative_path":  "docs/planning/04-prepared-content-review-summary-v1.json",
+                        "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\04-prepared-content-review-summary-v1.json",
+                        "size_bytes":  706,
+                        "sha256":  "A83EF897427150E15814FD8F9C1C20301D258F2EC9476DCD27C3D740874BA0EB",
+                        "lifecycle_status":  "CURRENT"
+                    }
+                ],
+    "stage_handoff_gate":  {
+                               "codex_local_validation":  "PASS",
+                               "downstream_handoff_allowed":  true,
+                               "artifact_persisted":  true
+                           },
+    "artifact_storage_report":  {
+                                    "safe_deleted_bytes":  0,
+                                    "retained_bytes":  0,
+                                    "created_file_count":  8,
+                                    "created_bytes":  0,
+                                    "retained_file_count":  8,
+                                    "review_required_count":  0,
+                                    "safe_deleted_file_count":  0
+                                },
+    "final_status":  "PASS_READY_FOR_SKILL_05",
+    "operating_contract":  {
+                               "raw_source":  "project_local_original_archive",
+                               "future_video_extensible":  true,
+                               "seo_geo_authority":  "skill01",
+                               "legal_mode":  "controlled_consistency_finalization"
+                           },
+    "lifecycle_contract_version":  "v1",
+    "lifecycle_registry_path":  "docs/planning/artifact-lifecycle-registry-v1.json",
+    "cleanup_report_path":  "docs/planning/skill04-cleanup-report-skill04-brain-20260730-1518.json",
+    "artifact_entries":  [
+                             {
+                                 "artifact_id":  "skill04-0",
+                                 "relative_path":  "imports/raw-content/current",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\current",
+                                 "size_bytes":  1,
+                                 "sha256":  null,
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-1",
+                                 "relative_path":  "imports/raw-content/raw-content-intake-manifest-v1.md",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\raw-content-intake-manifest-v1.md",
+                                 "size_bytes":  220,
+                                 "sha256":  "CAAC97447744108316734297BB2C48F1BBD729861EE957FB4E5A19D5C00BE3D9",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-2",
+                                 "relative_path":  "content-prep/prepared-content/articles.json",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\articles.json",
+                                 "size_bytes":  132900,
+                                 "sha256":  "154A4158375289143AAFD9560223CE6091411D9728C8A631972D64AE7A8E5F2B",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-3",
+                                 "relative_path":  "content-prep/prepared-content/media-manifest.json",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\media-manifest.json",
+                                 "size_bytes":  9391,
+                                 "sha256":  "58AA677A58CE4A4DCCED8E81345697379F5D99FEF10CFD6271FA9B385EDBD3FA",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-4",
+                                 "relative_path":  "content-prep/time-generation-report-v1.md",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-report-v1.md",
+                                 "size_bytes":  144,
+                                 "sha256":  "B1A3CCDE40365C53B2760035871CFFFECBAFE6430C69F5D7385765F9DA91C823",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-5",
+                                 "relative_path":  "content-prep/time-generation-summary-v1.json",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-summary-v1.json",
+                                 "size_bytes":  319,
+                                 "sha256":  "B041F58932DAD27E0AA45E791D9A4BCBBDB7EEA4A896FB2C5E7D39E4A02CC1C9",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-6",
+                                 "relative_path":  "docs/planning/content-seo-geo-naming-package-report-v1.md",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\content-seo-geo-naming-package-report-v1.md",
+                                 "size_bytes":  207,
+                                 "sha256":  "4B2AC925A65DBB4BAE52E052A800FE9FB2D850C1A53AA123E5E6DDBA01FB361F",
+                                 "lifecycle_status":  "CURRENT"
+                             },
+                             {
+                                 "artifact_id":  "skill04-7",
+                                 "relative_path":  "docs/planning/04-prepared-content-review-summary-v1.json",
+                                 "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\04-prepared-content-review-summary-v1.json",
+                                 "size_bytes":  706,
+                                 "sha256":  "A83EF897427150E15814FD8F9C1C20301D258F2EC9476DCD27C3D740874BA0EB",
+                                 "lifecycle_status":  "CURRENT"
+                             }
+                         ],
+    "output_path_contract_version":  "site-factory-output-path-contract-v1",
+    "output_path_evidence":  {
+                                 "artifacts":  [
+                                                   {
+                                                       "artifact_id":  "skill04-0",
+                                                       "relative_path":  "imports/raw-content/current",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\current",
+                                                       "size_bytes":  1,
+                                                       "sha256":  null,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-1",
+                                                       "relative_path":  "imports/raw-content/raw-content-intake-manifest-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\raw-content-intake-manifest-v1.md",
+                                                       "size_bytes":  220,
+                                                       "sha256":  "CAAC97447744108316734297BB2C48F1BBD729861EE957FB4E5A19D5C00BE3D9",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-2",
+                                                       "relative_path":  "content-prep/prepared-content/articles.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\articles.json",
+                                                       "size_bytes":  132900,
+                                                       "sha256":  "154A4158375289143AAFD9560223CE6091411D9728C8A631972D64AE7A8E5F2B",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-3",
+                                                       "relative_path":  "content-prep/prepared-content/media-manifest.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\prepared-content\\media-manifest.json",
+                                                       "size_bytes":  9391,
+                                                       "sha256":  "58AA677A58CE4A4DCCED8E81345697379F5D99FEF10CFD6271FA9B385EDBD3FA",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-4",
+                                                       "relative_path":  "content-prep/time-generation-report-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-report-v1.md",
+                                                       "size_bytes":  144,
+                                                       "sha256":  "B1A3CCDE40365C53B2760035871CFFFECBAFE6430C69F5D7385765F9DA91C823",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-5",
+                                                       "relative_path":  "content-prep/time-generation-summary-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\time-generation-summary-v1.json",
+                                                       "size_bytes":  319,
+                                                       "sha256":  "B041F58932DAD27E0AA45E791D9A4BCBBDB7EEA4A896FB2C5E7D39E4A02CC1C9",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-6",
+                                                       "relative_path":  "docs/planning/content-seo-geo-naming-package-report-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\content-seo-geo-naming-package-report-v1.md",
+                                                       "size_bytes":  207,
+                                                       "sha256":  "4B2AC925A65DBB4BAE52E052A800FE9FB2D850C1A53AA123E5E6DDBA01FB361F",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill04-7",
+                                                       "relative_path":  "docs/planning/04-prepared-content-review-summary-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\04-prepared-content-review-summary-v1.json",
+                                                       "size_bytes":  706,
+                                                       "sha256":  "A83EF897427150E15814FD8F9C1C20301D258F2EC9476DCD27C3D740874BA0EB",
+                                                       "lifecycle_status":  "CURRENT"
+                                                   }
+                                               ],
+                                 "skill_id":  "04",
+                                 "run_id":  "skill04-brain-20260730-1518",
+                                 "output_path_contract_version":  "site-factory-output-path-contract-v1",
+                                 "project_root":  "C:\\Users\\aoemo\\Documents\\Brian"
+                             },
+    "human_review":  {
+                         "caption_empty_allowed":  true,
+                         "summary_path":  "docs/planning/04-prepared-content-review-summary-v1.json",
+                         "approval_phrase":  "APPROVE_SKILL04_PREPARED_CONTENT",
+                         "needs_review_count":  0,
+                         "caption_required":  false,
+                         "contact_sheet_path":  "not-required-local-media-reviewed"
+                     },
+    "editorial_content_quality":  {
+                                      "quality_status":  "PASS",
+                                      "total_hit_count":  0
+                                  },
+    "composite_content_quality_status":  "COMPOSITE_CONTENT_QUALITY_PASS"
+}

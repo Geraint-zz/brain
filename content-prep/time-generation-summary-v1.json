@@ -1,0 +1,11 @@
+﻿{
+    "article_count":  20,
+    "unique_published_at_count":  20,
+    "future_dates_count":  0,
+    "same_timestamp_count":  0,
+    "invalid_updated_at_count":  0,
+    "capacity_status":  "OK",
+    "publish_anchor_date":  "2026-07-30",
+    "window_start":  "2026-07-11",
+    "window_end":  "2026-07-30"
+}

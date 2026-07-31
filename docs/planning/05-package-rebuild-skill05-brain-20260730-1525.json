@@ -1,0 +1,20 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "05",
+    "site_id":  "brain",
+    "run_id":  "skill05-brain-20260730-1525",
+    "mode":  "controlled_package_only_rebuild",
+    "status":  "PASS_PACKAGE_READY_FOR_ADMIN_IMPORT",
+    "package_path":  "C:\\Users\\aoemo\\Documents\\Brian\\content-prep\\packages\\brain-initial-content-package-skill05-brain-20260730-1525.zip",
+    "package_sha256":  "8EC5F346EDBA7D98101B244E12B064B8D2BF915F825EA780D28F4CCDC60D9A3F",
+    "article_count":  20,
+    "media_count":  40,
+    "invariants":  {
+                       "seo_geo_changed":  false,
+                       "slug_changed":  false,
+                       "media_selection_changed":  false,
+                       "time_changed":  false,
+                       "content_changed":  false
+                   },
+    "admin_preview_previous_failure":  "JSON BOM parse failure repaired"
+}

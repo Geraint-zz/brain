@@ -1,0 +1,490 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "01",
+    "site_id":  "brain",
+    "archive_batch_id":  "brain-20260730-143609",
+    "run_id":  "skill01-brain-20260730-143609",
+    "capability_gates":  {
+                             "site_identity":  "PASS",
+                             "raw_content":  "PASS",
+                             "hierarchy":  "PASS",
+                             "seo_geo":  "PASS",
+                             "legal_trust":  "PASS",
+                             "content_time":  "PASS",
+                             "homepage_wireframe":  "PASS",
+                             "visual_source_lifecycle":  "PASS",
+                             "formal_domain":  "PASS",
+                             "skill01b_archive":  "PASS"
+                         },
+    "required_outputs":  [
+                             {
+                                 "output_id":  "OUT-01",
+                                 "path":  "docs/site-blueprint/01-site-blueprint-seo-geo-map-v1.md",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "9B37274111C79A7C7D5D9BBCBDF679236062D007C6BA1E9D88602CD5B3BA9457",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-02",
+                                 "path":  "prototypes/01-homepage-wireframe-v1.html",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "4FC6DC2324DEFDE62619BCD8A867DCEFCF3258ED4B155247397BED6973954370",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-03",
+                                 "path":  "docs/planning/legal-pages-draft-v1.md",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "2F3B8BCD7813C73FD7EE5327BA4929BD29F26429DB02842008E6D50562353157",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-04",
+                                 "path":  "docs/planning/legal-pages-manifest-v1.json",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "CA8CFE0FA9E9B8160D392D154C4A0FF476AEFFA1788F5EC794978AC096AB7701",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-05",
+                                 "path":  "docs/planning/content-time-policy-v1.json",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "6D40D482BB9D3A9CCC415675ED9572A0FFE6104862C2C2C0CBEA36187EF7B368",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-06",
+                                 "path":  "docs/site-blueprint/seo-geo-execution-manifest-v1.json",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "D351C0037D5F9E6FF4F2EF08BA3054C947049D330C3163819B6CA87DD838DE16",
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-07",
+                                 "path":  "docs/site-blueprint/skill01-output-manifest-v1.json",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  null,
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-08",
+                                 "path":  "imports/raw-content/original/",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  null,
+                                 "status":  "PASS"
+                             },
+                             {
+                                 "output_id":  "OUT-09",
+                                 "path":  "imports/raw-content/raw-content-original-manifest-v1.md",
+                                 "exists":  true,
+                                 "non_empty":  true,
+                                 "schema_valid":  true,
+                                 "metadata_consistent":  true,
+                                 "sha256":  "C890827C7A9F8CF03A7314AF29479A89DBFBFB9A01E568358BB14A88EF60E1AD",
+                                 "status":  "PASS"
+                             }
+                         ],
+    "identity_consistent":  true,
+    "project_hardcoding_count":  0,
+    "capability_regression_count":  0,
+    "final_status":  "PASS",
+    "stage_handoff_gate":  {
+                               "artifact_persisted":  true,
+                               "codex_local_validation":  "PASS",
+                               "downstream_handoff_allowed":  true
+                           },
+    "artifact_storage_report":  {
+                                    "created_file_count":  13,
+                                    "created_bytes":  0,
+                                    "retained_file_count":  9,
+                                    "retained_bytes":  0,
+                                    "safe_deleted_file_count":  1,
+                                    "safe_deleted_bytes":  0,
+                                    "review_required_count":  0
+                                },
+    "operating_contract":  {
+                               "minimum_input_count":  5,
+                               "gpt_authored_outputs":  true,
+                               "codex_persistence_only":  true,
+                               "project_local_raw_archive":  true
+                           },
+    "lifecycle_contract_version":  "v1",
+    "lifecycle_registry_path":  "docs/planning/artifact-lifecycle-registry-v1.json",
+    "cleanup_report_path":  "docs/planning/skill01-cleanup-report-skill01-brian-20260730-113950.json",
+    "artifact_entries":  [
+                             {
+                                 "artifact_id":  "skill01-artifact-1",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/site-blueprint/01-site-blueprint-seo-geo-map-v1.md",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  5518,
+                                 "sha256":  "E8DEA7E02B00AC7942B23B0CF8A0D55105677325842DE22D89922A9053AB9661",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-2",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "prototypes/01-homepage-wireframe-v1.html",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  2410,
+                                 "sha256":  "7E0234F4832B4681C93BD587CB826D9CDF926ABE6EC7AD51E5BAA4F93257E886",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-3",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/planning/legal-pages-draft-v1.md",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  6796,
+                                 "sha256":  "C17B6FC77046CDB0B52E518C25F0700DE19F2989A3A0B205448B4D9228BE91F8",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-4",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/planning/legal-pages-manifest-v1.json",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  1191,
+                                 "sha256":  "26D321B2D3170C2711EB28C674C6679DF81898658EC0D644FB130FDD8D2F51E1",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-5",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/planning/content-time-policy-v1.json",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  829,
+                                 "sha256":  "C393DE9D16864C4AFAB375309EA69B0B476C82A16B514C272645C16888676EAB",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-6",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/site-blueprint/seo-geo-execution-manifest-v1.json",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  5765,
+                                 "sha256":  "D4AA875F5F3F39CA613E7BF29AC373885FA61220A73AE1DEB93E6B3EBF373114",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-7",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "docs/site-blueprint/skill01-output-manifest-v1.json",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  4337,
+                                 "sha256":  null,
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-8",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "imports/raw-content/original/",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  null,
+                                 "sha256":  null,
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             },
+                             {
+                                 "artifact_id":  "skill01-artifact-9",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "relative_path":  "imports/raw-content/raw-content-original-manifest-v1.md",
+                                 "artifact_type":  "skill01_authority",
+                                 "lifecycle_status":  "CURRENT",
+                                 "cleanup_policy":  "keep_in_project",
+                                 "safe_to_delete_after":  "never while referenced by current authority or downstream handoff",
+                                 "current_replacement":  null,
+                                 "referenced_by":  [
+                                                       "docs/site-blueprint/skill01-output-manifest-v1.json"
+                                                   ],
+                                 "size_bytes":  12227,
+                                 "sha256":  "F1D013339DFCC7E77B08CE45E6B1FDAB15C165DC75F5D7D28087BB74B9AB4BCA",
+                                 "created_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "last_verified_at":  "2026-07-30T06:37:33.9828240Z",
+                                 "git_tracked":  false,
+                                 "formal_reference_count":  1,
+                                 "handoff_target":  "Skill 04 / Skill 05",
+                                 "source_artifact_ids":  [
+
+                                                         ],
+                                 "reason":  "Skill 01 locked authority persisted and verified",
+                                 "notes":  [
+
+                                           ]
+                             }
+                         ],
+    "output_path_contract_version":  "site-factory-output-path-contract-v1",
+    "output_path_evidence":  {
+                                 "output_path_contract_version":  "site-factory-output-path-contract-v1",
+                                 "run_id":  "skill01-brain-20260730-143609",
+                                 "skill_id":  "01",
+                                 "project_root":  "C:\\Users\\aoemo\\Documents\\Brian",
+                                 "artifacts":  [
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-1",
+                                                       "relative_path":  "docs/site-blueprint/01-site-blueprint-seo-geo-map-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\site-blueprint\\01-site-blueprint-seo-geo-map-v1.md",
+                                                       "sha256":  "E8DEA7E02B00AC7942B23B0CF8A0D55105677325842DE22D89922A9053AB9661",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-2",
+                                                       "relative_path":  "prototypes/01-homepage-wireframe-v1.html",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\prototypes\\01-homepage-wireframe-v1.html",
+                                                       "sha256":  "7E0234F4832B4681C93BD587CB826D9CDF926ABE6EC7AD51E5BAA4F93257E886",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-3",
+                                                       "relative_path":  "docs/planning/legal-pages-draft-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\legal-pages-draft-v1.md",
+                                                       "sha256":  "C17B6FC77046CDB0B52E518C25F0700DE19F2989A3A0B205448B4D9228BE91F8",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-4",
+                                                       "relative_path":  "docs/planning/legal-pages-manifest-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\legal-pages-manifest-v1.json",
+                                                       "sha256":  "26D321B2D3170C2711EB28C674C6679DF81898658EC0D644FB130FDD8D2F51E1",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-5",
+                                                       "relative_path":  "docs/planning/content-time-policy-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\planning\\content-time-policy-v1.json",
+                                                       "sha256":  "C393DE9D16864C4AFAB375309EA69B0B476C82A16B514C272645C16888676EAB",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-6",
+                                                       "relative_path":  "docs/site-blueprint/seo-geo-execution-manifest-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\site-blueprint\\seo-geo-execution-manifest-v1.json",
+                                                       "sha256":  "D4AA875F5F3F39CA613E7BF29AC373885FA61220A73AE1DEB93E6B3EBF373114",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-7",
+                                                       "relative_path":  "docs/site-blueprint/skill01-output-manifest-v1.json",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\docs\\site-blueprint\\skill01-output-manifest-v1.json",
+                                                       "sha256":  null,
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-8",
+                                                       "relative_path":  "imports/raw-content/original/",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\original",
+                                                       "sha256":  null,
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   },
+                                                   {
+                                                       "artifact_id":  "skill01-artifact-9",
+                                                       "relative_path":  "imports/raw-content/raw-content-original-manifest-v1.md",
+                                                       "absolute_path":  "C:\\Users\\aoemo\\Documents\\Brian\\imports\\raw-content\\raw-content-original-manifest-v1.md",
+                                                       "sha256":  "F1D013339DFCC7E77B08CE45E6B1FDAB15C165DC75F5D7D28087BB74B9AB4BCA",
+                                                       "required_for_mode":  true,
+                                                       "lifecycle_status":  "CURRENT"
+                                                   }
+                                               ]
+                             },
+    "time_policy_contract":  {
+                                 "contract_version":  "site-factory-time-policy-v2",
+                                 "required_field_count":  12,
+                                 "validation_status":  "PASS",
+                                 "policy_path":  "docs/planning/content-time-policy-v1.json",
+                                 "policy_sha256":  "C393DE9D16864C4AFAB375309EA69B0B476C82A16B514C272645C16888676EAB",
+                                 "timestamp_change_count":  0
+                             },
+    "editorial_quality_profile":  {
+                                      "primary_language":  "en",
+                                      "title_threshold_behavior":  "REVIEW",
+                                      "citation_policy":  "required_for_health_risk_research_and_product_effect_claims"
+                                  },
+    "brand_asset_authority":  {
+                                  "brand_asset_mode":  "text_wordmark",
+                                  "favicon_policy":  "required_before_launch"
+                              }
+}

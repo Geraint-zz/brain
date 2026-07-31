@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "run_id": "20260731-143500",
+  "site_id": "brain",
+  "status": "CURRENT",
+  "artifacts": [
+    {"path": "docs/planning/release-staging-manifest-20260731-143500.json", "lifecycle_status": "CURRENT"},
+    {"path": "docs/planning/site-launch-qa-report-v1.md", "lifecycle_status": "CURRENT"},
+    {"path": "docs/planning/07-skill-output-manifest-20260731-143500.json", "lifecycle_status": "CURRENT"}
+  ],
+  "cleanup": {"safe_deleted_count": 0, "review_required_count": 0}
+}

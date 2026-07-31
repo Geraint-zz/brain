@@ -1,0 +1,15 @@
+﻿{
+    "skill_id":  "04",
+    "site_id":  "brain",
+    "status":  "WAITING_FOR_PREPARED_CONTENT_REVIEW",
+    "article_count":  20,
+    "media_count":  40,
+    "summary":  "Review prepared article JSON, local media, dates, and Legal authority before package creation.",
+    "inspection_paths":  [
+                             "content-prep/prepared-content/articles.json",
+                             "content-prep/prepared-content/media-manifest.json",
+                             "content-prep/time-generation-summary-v1.json",
+                             "docs/planning/legal-pages-draft-v1.md"
+                         ],
+    "approval_phrase":  "APPROVE_SKILL04_PREPARED_CONTENT"
+}

@@ -1,0 +1,47 @@
+﻿{
+    "schema_version":  "v1",
+    "site_id":  "brain",
+    "run_id":  "skill02-brain-20260730-144422",
+    "status":  "PASS",
+    "remote_dependency_count":  0,
+    "local_css_count":  1,
+    "local_image_count":  1,
+    "assets":  [
+                   {
+                       "relative_path":  "assets/images/focus-cover.png",
+                       "bytes":  3663101,
+                       "sha256":  "275CAF7AC563E7D028D0B8635822B4CDF6EB4DF078A2E4CB6EA4D998001477F6"
+                   },
+                   {
+                       "relative_path":  "assets/styles/brain-local.css",
+                       "bytes":  1300,
+                       "sha256":  "D6587BAA7C541261B0D7394A285B351DDC177DB9FBE803B58D332141610484AE"
+                   }
+               ],
+    "candidate_files":  [
+                            {
+                                "relative_path":  "brian_article_focus_routine_mobile_revised/code.html",
+                                "sha256":  "8621EA041BD05E524F47E857D59A40C43753523F64F352251B7AA48A08F95DD6"
+                            },
+                            {
+                                "relative_path":  "brian_category_focus_thinking_desktop/code.html",
+                                "sha256":  "B0C1053B341F28C7825992988EEF5B569D9B7C895C101503C92B6934B0F5508E"
+                            },
+                            {
+                                "relative_path":  "brian_homepage_desktop_revised/code.html",
+                                "sha256":  "F08AAE731375D533BAB7E018AB0F7FEA24128DC258F5465BE0CEC28F5444BE00"
+                            },
+                            {
+                                "relative_path":  "brian_homepage_mobile_revised/code.html",
+                                "sha256":  "FD379BEB3226248F8F2980F27F280B2164D20D75515EE3EA0D1D5001462704EB"
+                            },
+                            {
+                                "relative_path":  "brian_legal_trust_layout_desktop/code.html",
+                                "sha256":  "8BFEB54751B7E0FE45A1D776DB72D0163925280858A0A6C248D10BDEB403C3C6"
+                            },
+                            {
+                                "relative_path":  "brian_section_everyday_cognitive_health_desktop/code.html",
+                                "sha256":  "F2B0A08467A4690B8BF8866CC4727D232857E27BB2F88754403EA9CE41228943"
+                            }
+                        ]
+}

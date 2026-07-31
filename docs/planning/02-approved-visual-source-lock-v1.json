@@ -1,0 +1,49 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "02",
+    "site_id":  "brain",
+    "run_id":  "skill02-brain-20260730-144422",
+    "approved_by_user":  true,
+    "source_path":  "C:\\Users\\aoemo\\Documents\\Brian\\visual-sources\\brain-approved-production-source-skill02-brain-20260730-151030-light-blue.zip",
+    "source_sha256":  "42C851524683E8C1E1B6E2F075B8BF88F2487DBEB1C6C1E2E9F42F4C52AFFAA3",
+    "source_type":  "approved_stitch_export_html_css",
+    "approved_logo_type":  "text_wordmark: Brain",
+    "screenshot_manifest_path":  "docs/planning/02-stitch-final-screenshot-manifest-v1.json",
+    "screenshot_evidence_status":  "SKIP_USER_APPROVED",
+    "approval_evidence":  {
+                              "text":  "可锁定生成视觉",
+                              "recorded_at":  "2026-07-30T06:52:03.5195195Z"
+                          },
+    "visual_authority_order":  [
+                                   "Skill 01 content authority",
+                                   "Skill 02 approved production visual source",
+                                   "Skill 03 controlled implementation"
+                               ],
+    "source_content_fingerprint":  {
+                                       "site_id":  "brain",
+                                       "skill01_current":  true,
+                                       "asset_localization_manifest":  "docs/planning/02-asset-localization-manifest-v1.json"
+                                   },
+    "asset_localization_gate":  {
+                                    "status":  "PASS",
+                                    "remote_dependency_count":  0,
+                                    "local_css_count":  1,
+                                    "local_image_count":  1
+                                },
+    "production_source_gate":  {
+                                   "status":  "PASS",
+                                   "remote_dependency_count":  0,
+                                   "required_local_assets_complete":  true
+                               },
+    "ready_for_skill03":  true,
+    "asset_repair_record":  "docs\\planning\\02-asset-repair-focus-cover-20260730-150912.json",
+    "asset_repair_status":  "PASS",
+    "visual_palette_revision_record":  "docs\\planning\\02-visual-palette-revision-light-blue-20260730-151030.json",
+    "approved_visual_identity_summary":  "Brain modern editorial-research visual system with cloud canvas, deep sea blue, mist blue and restrained terracotta; mobile-first hierarchy.",
+    "light_blue_palette_user_approval":  {
+                                             "record":  "docs\\planning\\02-visual-palette-approval-light-blue-20260730-151129.json",
+                                             "recorded_at":  "2026-07-30T07:11:29.1286222Z",
+                                             "text":  "可通过验证锁定"
+                                         },
+    "status":  "CURRENT_LIGHT_BLUE_LOCKED"
+}

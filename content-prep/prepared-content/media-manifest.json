@@ -1,0 +1,244 @@
+{
+  "items": [
+    {
+      "slug": "cognitive-fatigue-at-work",
+      "role": "featured",
+      "path": "media/cognitive-fatigue-at-work-featured.png",
+      "alt": "Cognitive Fatigue at Work: A Practical Recovery Routine featured image"
+    },
+    {
+      "slug": "cognitive-fatigue-at-work",
+      "role": "closing",
+      "path": "media/cognitive-fatigue-at-work-closing.png",
+      "alt": "Cognitive Fatigue at Work: A Practical Recovery Routine closing image"
+    },
+    {
+      "slug": "healthy-aging-brain-routine",
+      "role": "featured",
+      "path": "media/healthy-aging-brain-routine-featured.png",
+      "alt": "Healthy Aging Brain Routine: Daily Habits to Discuss With Your Clinician featured image"
+    },
+    {
+      "slug": "healthy-aging-brain-routine",
+      "role": "closing",
+      "path": "media/healthy-aging-brain-routine-closing.png",
+      "alt": "Healthy Aging Brain Routine: Daily Habits to Discuss With Your Clinician closing image"
+    },
+    {
+      "slug": "student-focus-plan",
+      "role": "featured",
+      "path": "media/student-focus-plan-featured.png",
+      "alt": "Student Focus Plan: Study Sessions That Feel Manageable featured image"
+    },
+    {
+      "slug": "student-focus-plan",
+      "role": "closing",
+      "path": "media/student-focus-plan-closing.png",
+      "alt": "Student Focus Plan: Study Sessions That Feel Manageable closing image"
+    },
+    {
+      "slug": "student-memory-methods",
+      "role": "featured",
+      "path": "media/student-memory-methods-featured.png",
+      "alt": "Student Memory Methods for Exams and Lifelong Learning featured image"
+    },
+    {
+      "slug": "student-memory-methods",
+      "role": "closing",
+      "path": "media/student-memory-methods-closing.png",
+      "alt": "Student Memory Methods for Exams and Lifelong Learning closing image"
+    },
+    {
+      "slug": "workplace-attention-management",
+      "role": "featured",
+      "path": "media/workplace-attention-management-featured.png",
+      "alt": "Workplace Attention Management for Knowledge Workers featured image"
+    },
+    {
+      "slug": "workplace-attention-management",
+      "role": "closing",
+      "path": "media/workplace-attention-management-closing.png",
+      "alt": "Workplace Attention Management for Knowledge Workers closing image"
+    },
+    {
+      "slug": "brain-healthy-habits",
+      "role": "featured",
+      "path": "media/brain-healthy-habits-featured.png",
+      "alt": "Brain Healthy Habits That Fit a Busy Week featured image"
+    },
+    {
+      "slug": "brain-healthy-habits",
+      "role": "closing",
+      "path": "media/brain-healthy-habits-closing.png",
+      "alt": "Brain Healthy Habits That Fit a Busy Week closing image"
+    },
+    {
+      "slug": "how-to-focus-better",
+      "role": "featured",
+      "path": "media/how-to-focus-better-featured.png",
+      "alt": "How to Focus Better: A Practical Attention Routine featured image"
+    },
+    {
+      "slug": "how-to-focus-better",
+      "role": "closing",
+      "path": "media/how-to-focus-better-closing.png",
+      "alt": "How to Focus Better: A Practical Attention Routine closing image"
+    },
+    {
+      "slug": "how-to-improve-memory",
+      "role": "featured",
+      "path": "media/how-to-improve-memory-featured.png",
+      "alt": "How to Improve Memory With Evidence-Informed Daily Habits featured image"
+    },
+    {
+      "slug": "how-to-improve-memory",
+      "role": "closing",
+      "path": "media/how-to-improve-memory-closing.png",
+      "alt": "How to Improve Memory With Evidence-Informed Daily Habits closing image"
+    },
+    {
+      "slug": "memory-and-sleep-routine",
+      "role": "featured",
+      "path": "media/memory-and-sleep-routine-featured.png",
+      "alt": "Memory and Sleep: Build a Better Evening Routine featured image"
+    },
+    {
+      "slug": "memory-and-sleep-routine",
+      "role": "closing",
+      "path": "media/memory-and-sleep-routine-closing.png",
+      "alt": "Memory and Sleep: Build a Better Evening Routine closing image"
+    },
+    {
+      "slug": "thinking-skills-practice",
+      "role": "featured",
+      "path": "media/thinking-skills-practice-featured.png",
+      "alt": "Thinking Skills Practice: Build a Balanced Mental Workout featured image"
+    },
+    {
+      "slug": "thinking-skills-practice",
+      "role": "closing",
+      "path": "media/thinking-skills-practice-closing.png",
+      "alt": "Thinking Skills Practice: Build a Balanced Mental Workout closing image"
+    },
+    {
+      "slug": "brain-health-report-data-checklist",
+      "role": "featured",
+      "path": "media/brain-health-report-data-checklist-featured.png",
+      "alt": "Brain Health Report Data Checklist for Teams and Buyers featured image"
+    },
+    {
+      "slug": "brain-health-report-data-checklist",
+      "role": "closing",
+      "path": "media/brain-health-report-data-checklist-closing.png",
+      "alt": "Brain Health Report Data Checklist for Teams and Buyers closing image"
+    },
+    {
+      "slug": "cognitive-health-expert-interview-guide",
+      "role": "featured",
+      "path": "media/cognitive-health-expert-interview-guide-featured.png",
+      "alt": "Cognitive Health Expert Interview Guide for Editorial Teams featured image"
+    },
+    {
+      "slug": "cognitive-health-expert-interview-guide",
+      "role": "closing",
+      "path": "media/cognitive-health-expert-interview-guide-closing.png",
+      "alt": "Cognitive Health Expert Interview Guide for Editorial Teams closing image"
+    },
+    {
+      "slug": "digital-brain-health-market-framework",
+      "role": "featured",
+      "path": "media/digital-brain-health-market-framework-featured.png",
+      "alt": "Digital Brain Health Market: A Research Framework for Decision Makers featured image"
+    },
+    {
+      "slug": "digital-brain-health-market-framework",
+      "role": "closing",
+      "path": "media/digital-brain-health-market-framework-closing.png",
+      "alt": "Digital Brain Health Market: A Research Framework for Decision Makers closing image"
+    },
+    {
+      "slug": "how-to-read-cognitive-training-evidence",
+      "role": "featured",
+      "path": "media/how-to-read-cognitive-training-evidence-featured.png",
+      "alt": "How to Read Cognitive Training Evidence Without Overclaiming featured image"
+    },
+    {
+      "slug": "how-to-read-cognitive-training-evidence",
+      "role": "closing",
+      "path": "media/how-to-read-cognitive-training-evidence-closing.png",
+      "alt": "How to Read Cognitive Training Evidence Without Overclaiming closing image"
+    },
+    {
+      "slug": "workplace-brain-health-program-evaluation",
+      "role": "featured",
+      "path": "media/workplace-brain-health-program-evaluation-featured.png",
+      "alt": "How to Evaluate a Workplace Brain Health Program featured image"
+    },
+    {
+      "slug": "workplace-brain-health-program-evaluation",
+      "role": "closing",
+      "path": "media/workplace-brain-health-program-evaluation-closing.png",
+      "alt": "How to Evaluate a Workplace Brain Health Program closing image"
+    },
+    {
+      "slug": "brain-health-book-buying-guide",
+      "role": "featured",
+      "path": "media/brain-health-book-buying-guide-featured.png",
+      "alt": "Brain Health Books: A Practical Buying Guide featured image"
+    },
+    {
+      "slug": "brain-health-book-buying-guide",
+      "role": "closing",
+      "path": "media/brain-health-book-buying-guide-closing.png",
+      "alt": "Brain Health Books: A Practical Buying Guide closing image"
+    },
+    {
+      "slug": "brain-training-app-evaluation",
+      "role": "featured",
+      "path": "media/brain-training-app-evaluation-featured.png",
+      "alt": "How to Evaluate a Brain Training App Before You Pay featured image"
+    },
+    {
+      "slug": "brain-training-app-evaluation",
+      "role": "closing",
+      "path": "media/brain-training-app-evaluation-closing.png",
+      "alt": "How to Evaluate a Brain Training App Before You Pay closing image"
+    },
+    {
+      "slug": "brain-training-games-guide",
+      "role": "featured",
+      "path": "media/brain-training-games-guide-featured.png",
+      "alt": "Brain Training Games: What to Compare Before Choosing featured image"
+    },
+    {
+      "slug": "brain-training-games-guide",
+      "role": "closing",
+      "path": "media/brain-training-games-guide-closing.png",
+      "alt": "Brain Training Games: What to Compare Before Choosing closing image"
+    },
+    {
+      "slug": "cognitive-course-review-framework",
+      "role": "featured",
+      "path": "media/cognitive-course-review-framework-featured.png",
+      "alt": "Cognitive Training Courses: A Neutral Review Framework featured image"
+    },
+    {
+      "slug": "cognitive-course-review-framework",
+      "role": "closing",
+      "path": "media/cognitive-course-review-framework-closing.png",
+      "alt": "Cognitive Training Courses: A Neutral Review Framework closing image"
+    },
+    {
+      "slug": "memory-tools-comparison",
+      "role": "featured",
+      "path": "media/memory-tools-comparison-featured.png",
+      "alt": "Memory Tools Comparison: Notes, Spaced Review, and Reminders featured image"
+    },
+    {
+      "slug": "memory-tools-comparison",
+      "role": "closing",
+      "path": "media/memory-tools-comparison-closing.png",
+      "alt": "Memory Tools Comparison: Notes, Spaced Review, and Reminders closing image"
+    }
+  ]
+}

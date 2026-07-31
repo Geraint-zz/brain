@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brain — v3 visual review</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #163A38; background: #F8F7F2; }
+    body { margin: 0; }
+    header { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; padding: 1rem 1.25rem; border-bottom: 1px solid #c8d0ca; background: #fff; }
+    h1 { margin: 0 auto 0 0; font: 600 1.1rem Georgia, serif; }
+    button { cursor: pointer; border: 1px solid #86A49A; border-radius: .3rem; padding: .55rem .7rem; color: #163A38; background: #fff; }
+    button:hover, button:focus { background: #e7eee9; outline: 2px solid #B75D45; outline-offset: 2px; }
+    main { padding: 1rem; }
+    .notice { max-width: 75rem; margin: 0 auto 1rem; font-size: .9rem; color: #405D55; }
+    iframe { display: block; width: min(100%, 1440px); height: calc(100vh - 10rem); min-height: 680px; margin: auto; border: 1px solid #86A49A; background: #fff; }
+    .mobile { width: 390px; max-width: 100%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brain — Skill 02 candidate v3</h1>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_homepage_desktop_revised/code.html" data-mobile="false">Homepage desktop</button>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_homepage_mobile_revised/code.html" data-mobile="true">Homepage mobile</button>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_section_everyday_cognitive_health_desktop/code.html" data-mobile="false">Section</button>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_category_focus_thinking_desktop/code.html" data-mobile="false">Category</button>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_article_focus_routine_mobile_revised/code.html" data-mobile="true">Post mobile</button>
+    <button data-page="stitch_brian_visual_prototype_framework/brian_legal_trust_layout_desktop/code.html" data-mobile="false">Legal</button>
+  </header>
+  <main>
+    <p class="notice">Candidate only. This review page contains no live form, account, payment, tracking, or deployment capability. Open each page and review hierarchy, mobile layout, Legal routes, and general-information boundary.</p>
+    <iframe id="preview" title="Brain candidate preview" src="stitch_brian_visual_prototype_framework/brian_homepage_desktop_revised/code.html"></iframe>
+  </main>
+  <script>
+    const preview = document.getElementById('preview');
+    document.querySelectorAll('button[data-page]').forEach((button) => {
+      button.addEventListener('click', () => {
+        preview.src = button.dataset.page;
+        preview.classList.toggle('mobile', button.dataset.mobile === 'true');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,17 @@
+﻿{
+  "content_time_policy_version": "site-factory-time-policy-v2",
+  "publish_anchor_date": "2026-07-30",
+  "site_timezone": "UTC",
+  "anchor_backward_window_days": 19,
+  "latest_allowed_publish_date": "2026-07-30",
+  "schedule_direction": "from_window_start_forward",
+  "max_posts_per_day": 1,
+  "same_day_allowed_when_total_lte": 1,
+  "same_timestamp_allowed": false,
+  "future_dates_allowed": false,
+  "updated_at_default": "same_as_published_at",
+  "updated_at_display_rule": "show_updated_only_when_later_than_published",
+  "value_sources": {"publish_anchor_date":"user_input","site_timezone":"project_policy","anchor_backward_window_days":"project_policy","max_posts_per_day":"project_policy"},
+  "capacity": {"window_days":20,"max_posts_per_day":1,"window_capacity":20,"expected_article_count":20,"capacity_status":"OK"}
+}
+

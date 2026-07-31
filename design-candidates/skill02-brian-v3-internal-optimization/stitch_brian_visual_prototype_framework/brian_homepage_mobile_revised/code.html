@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brian | Brain Health Editorial</title>
+<!-- Material Symbols -->
+
+<!-- Google Fonts: Playfair Display for Serifs, Source Sans 3 for UI -->
+
+
+
+<!-- Shared Style Context Injection -->
+
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F8F7F2; /* Primary Stone */
+            color: #172422;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-line {
+            height: 1px;
+            background: rgba(5, 26, 23, 0.1);
+        }
+        /* Hide scrollbars for clean UI */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<link rel="stylesheet" href="../assets/styles/brain-local.css"></head>
+<body class="font-body-md text-body-md selection:bg-primary/10 selection:text-primary">
+<!-- TopAppBar -->
+<header class="bg-background sticky top-0 z-40 border-b border-primary/10">
+<div class="flex justify-between items-center w-full px-margin-mobile py-4 mx-auto max-w-container-max">
+<div class="flex items-center gap-2">
+<button class="p-2 -ml-2 text-primary" id="drawer-trigger">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight">Brain</h1>
+<div class="flex items-center">
+<button class="p-2 -mr-2 text-primary">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Navigation Drawer (Overlay on Mobile) -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="drawer-overlay">
+<aside class="fixed inset-y-0 left-0 w-[280px] bg-surface-container-low flex flex-col py-6 transition-transform duration-300 -translate-x-full" id="drawer">
+<div class="px-6 mb-8 flex justify-between items-center">
+<h2 class="font-display-lg-mobile text-headline-sm text-primary">Brian Editorial</h2>
+<button class="text-primary" id="drawer-close">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col flex-1">
+<!-- Navigation Labels as per Request -->
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-ui-label text-ui-label">Everyday Cognitive Health</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-ui-label text-ui-label">Audience Programs</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+<span class="font-ui-label text-ui-label">Tools &amp; Reviews</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined">science</span>
+<span class="font-ui-label text-ui-label">Research &amp; Industry</span>
+</a>
+<div class="editorial-line my-4 mx-6"></div>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-ui-label text-ui-label">Library</span>
+</a>
+</nav>
+</aside>
+</div>
+<main class="min-h-screen">
+<!-- Medical Disclaimer Boundary -->
+<section class="bg-surface-container-highest/50 px-margin-mobile py-3 text-center">
+<p class="font-label-caps text-label-caps text-secondary opacity-70">
+                Non-Medical Educational Resource. Approved source copy will be projected here.
+            </p>
+</section>
+<!-- Hero Section: Modern Editorial Asymmetric -->
+<section class="px-margin-mobile pt-stack-md pb-stack-lg">
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-caps text-label-caps text-on-tertiary-container tracking-widest">FEATURED EDITORIAL</span>
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-primary leading-tight">
+                    The Architecture of Focused Thought.
+                </h2>
+<div class="h-[320px] w-full rounded-lg overflow-hidden my-4 relative">
+<img class="w-full h-full object-cover" data-alt="A high-end editorial photograph of a minimalist, sun-drenched library with stone walls and a single forest green velvet chair. The lighting is soft and natural, emphasizing textures of paper and wood. The composition is calm and focused, reflecting a sophisticated intellectual serenity. Deep shadows and bright highlights create a rich, tactile atmosphere consistent with a modern brain health publication." src="../assets/images/focus-cover.png"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Approved source copy will be projected here. Understanding the rhythmic nature of neural rejuvenation through environmental stimuli.
+                </p>
+<div class="pt-2">
+<button class="bg-primary text-on-primary px-6 py-3 font-ui-label text-ui-label rounded shadow-sm">
+                        READ ARTICLE
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Navigation Section -->
+<section class="bg-surface-container-low px-margin-mobile py-stack-lg flex flex-col gap-gutter">
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary italic">Explore Verticals</h3>
+<div class="editorial-line w-12 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Vertical 1: Everyday Cognitive Health -->
+<div class="bg-surface p-6 border border-primary/5 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Everyday Cognitive Health</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Approved source copy will be projected here. Strategies for daily maintenance and mental clarity.</p>
+<a class="text-primary font-ui-label text-ui-label flex items-center gap-2 mt-2" href="#">
+                        EXPLORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Vertical 2: Audience Programs -->
+<div class="bg-surface p-6 border border-primary/5 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Audience Programs</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Approved source copy will be projected here. Tailored curriculums for diverse cognitive needs.</p>
+<a class="text-primary font-ui-label text-ui-label flex items-center gap-2 mt-2" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Vertical 3: Tools & Reviews -->
+<div class="bg-surface p-6 border border-primary/5 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">fact_check</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Tools &amp; Reviews</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Approved source copy will be projected here. Evidence-based analysis of modern brain health utilities.</p>
+<a class="text-primary font-ui-label text-ui-label flex items-center gap-2 mt-2" href="#">
+                        VIEW REVIEWS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Vertical 4: Research & Industry -->
+<div class="bg-surface p-6 border border-primary/5 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">science</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Research &amp; Industry</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Approved source copy will be projected here. The latest breakthroughs and industry movements.</p>
+<a class="text-primary font-ui-label text-ui-label flex items-center gap-2 mt-2" href="#">
+                        READ RESEARCH <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Quote / Atmosphere Section -->
+<section class="px-margin-mobile py-stack-xl flex flex-col items-center text-center">
+<div class="max-w-md">
+<span class="material-symbols-outlined text-primary/20 text-5xl mb-4">format_quote</span>
+<blockquote class="font-headline-md text-headline-md text-primary italic mb-4">
+                    "Approved source copy will be projected here. The brain is not a vessel to be filled, but a fire to be kindled."
+                </blockquote>
+<cite class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">— Brian Editorial Staff</cite>
+</div>
+</section>
+<!-- Briefs Feed -->
+<section class="px-margin-mobile py-stack-lg border-t border-primary/5">
+<div class="flex justify-between items-end mb-stack-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">Latest Briefs</h3>
+<a class="font-ui-label text-ui-label text-primary underline" href="#">View Archive</a>
+</div>
+<div class="flex flex-col gap-8">
+<!-- Brief Item 1 -->
+<article class="flex flex-col gap-3 group">
+<div class="flex justify-between items-center text-label-caps font-label-caps text-secondary opacity-80">
+<span>Publication date scheduled</span>
+<span>Healthy Aging</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary/80 transition-colors">Approved source copy will be projected here.</h5>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Approved source copy will be projected here. Examining the role of Everyday Cognitive Health in later life stages through the lens of recent clinical studies.</p>
+<div class="editorial-line mt-2"></div>
+</article>
+<!-- Brief Item 2 -->
+<article class="flex flex-col gap-3 group">
+<div class="flex justify-between items-center text-label-caps font-label-caps text-secondary opacity-80">
+<span>Publication date scheduled</span>
+<span>Tools &amp; Reviews</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary/80 transition-colors">Approved source copy will be projected here.</h5>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Approved source copy will be projected here. The intersection of gut microbiome health and cognitive clarity.</p>
+<div class="editorial-line mt-2"></div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container mt-stack-xl border-t border-primary/10">
+<div class="w-full px-margin-mobile py-stack-lg max-w-container-max mx-auto flex flex-col gap-stack-md">
+<div class="flex flex-col gap-4">
+<h2 class="font-display-lg text-headline-md text-primary">Brain</h2>
+<p class="font-body-md text-secondary opacity-80 max-w-sm">
+                    Approved source copy will be projected here. A curated editorial for the enhancement of brain health and cognitive Healthy Aging.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-y-6 pt-4">
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-primary">NAVIGATION</span>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="#">Research &amp; Industry</a>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="#">Audience Programs</a>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="#">Tools</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-primary">LEGAL</span>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="/privacy-policy/">Privacy Policy</a>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="/terms/">Terms</a>
+<a class="font-body-md text-secondary hover:text-primary transition-colors" href="#">Disclaimer</a>
+</div>
+</div>
+<div class="editorial-line"></div>
+<div class="flex flex-col gap-4">
+<p class="font-body-md text-secondary text-sm">
+                    © Brian. All Rights Reserved. Approved source copy will be projected here.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Interactive Logic -->
+<script>
+        const trigger = document.getElementById('drawer-trigger');
+        const close = document.getElementById('drawer-close');
+        const overlay = document.getElementById('drawer-overlay');
+        const drawer = document.getElementById('drawer');
+
+        function openDrawer() {
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('opacity-0');
+                drawer.classList.remove('-translate-x-full');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            overlay.classList.add('opacity-0');
+            drawer.classList.add('-translate-x-full');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        trigger.addEventListener('click', openDrawer);
+        close.addEventListener('click', closeDrawer);
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeDrawer();
+        });
+    </script>
+</body></html>
+
+
+
+
+
+

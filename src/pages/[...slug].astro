@@ -1,0 +1,22 @@
+---
+import sections from '../data/sections.json';
+import categories from '../data/categories.json';
+import posts from '../data/posts.json';
+export function getStaticPaths() {
+  const legalRoutes = ['about','privacy-policy','terms','user-agreement']; const routeList = sections.map((x) => 'section/' + x.slug).concat(categories.map((x) => 'category/' + x.slug), posts.map((x) => 'post/' + x.slug), legalRoutes);
+  return routeList.map((route) => ({ params: { slug: route } }));
+}
+const route = Astro.params.slug ?? '';
+const parts = route.split('/');
+const kind = parts[0];
+const slug = parts[1] ?? '';
+const section = sections.find((x) => x.slug === slug);
+const category = categories.find((x) => x.slug === slug);
+const post = posts.find((x) => x.slug === slug);
+const sectionCategories = categories.filter((x) => x.section_slug === slug);
+const categoryPosts = posts.filter((x) => x.category_slug === slug);
+const categoryLabel = category ? category.slug.replaceAll('-', ' ') : undefined;
+const title = section?.name ?? categoryLabel ?? post?.title ?? slug.replaceAll('-', ' ');
+const description = post?.excerpt ?? 'Evidence-informed Brain content.';
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content={description}><link rel="canonical" href={new URL(Astro.url.pathname,'https://brain.example')}><title>{title} | Brain</title><link rel="stylesheet" href="/assets/styles/brain-local.css"></head><body><header><a href="/"><strong>Brain</strong></a><nav><a href="/section/everyday-cognitive-health/">Everyday Cognitive Health</a><a href="/section/audience-programs/">Audience Programs</a><a href="/section/tools-reviews/">Tools &amp; Reviews</a><a href="/section/research-industry/">Research &amp; Industry</a></nav><a href="/about/">About</a></header><main><p class="eyebrow">{kind === 'post' ? 'ARTICLE' : kind === 'category' ? 'CATEGORY' : 'SECTION'}</p><h1>{title}</h1><p class="lead">{description}</p>{kind === 'section' && sectionCategories.length > 0 && <section><h2>Explore this section</h2><div class="cards">{sectionCategories.map((item) => <a class="card" href={'/category/' + item.slug + '/'}><h3>{item.slug.replaceAll('-', ' ')}</h3><p>Browse evidence-informed guidance in this category.</p><span>View category →</span></a>)}</div></section>}{kind === 'category' && categoryPosts.length > 0 && <section><h2>Articles in this category</h2><div class="cards">{categoryPosts.map((item) => <a class="card" href={'/post/' + item.slug + '/'}><p class="eyebrow">{item.published_at.slice(0,10)}</p><h3>{item.title}</h3><p>{item.excerpt}</p><span>Read article →</span></a>)}</div></section>}{kind === 'post' && post && <article class="article-content"><p class="eyebrow">{post.category_slug.replaceAll('-', ' ')}</p><p>Published {post.published_at.slice(0,10)}</p><img src={'/assets/images/' + post.slug + '/featured.png'} alt={post.image_alt}><div set:html={post.body}></div><img src={'/assets/images/' + post.slug + '/closing.png'} alt={post.title + ' closing image'}><p class="disclaimer">{post.disclaimer}</p></article>}{kind !== 'post' && kind !== 'category' && kind !== 'section' && <p>Brain provides general educational information. It does not provide medical advice, diagnosis, treatment, or emergency guidance.</p>}</main><footer>General educational information only. <a href="/about/">About</a> · <a href="/privacy-policy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/user-agreement/">User Agreement</a></footer></body></html>

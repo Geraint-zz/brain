@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "site_id": "brain",
+  "stage": "06_initial_admin_import",
+  "decision": "SKIP_EXPLICITLY_AUTHORIZED",
+  "authorized_by_user": true,
+  "authorized_at": "2026-07-31",
+  "reason": "User requested direct upload to GitHub repository before Admin import.",
+  "consequence": "No Admin Apply handoff is claimed; Skill 07 upstream handoff remains incomplete.",
+  "next_stage": "github_upload_with_explicit_skip_record"
+}

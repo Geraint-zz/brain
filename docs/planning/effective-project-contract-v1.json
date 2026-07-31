@@ -1,0 +1,17 @@
+{
+    "schema_version":  "v1",
+    "contract_version":  "v1",
+    "project_contract_version":  "v1",
+    "status":  "CURRENT",
+    "site_id":  "brain",
+    "project_root":  "C:\\Users\\aoemo\\Documents\\Brian",
+    "authority":  {
+                      "content":  "Skill 01 CURRENT",
+                      "visual":  "Skill 02 production source lock",
+                      "implementation":  "Astro controlled implementation"
+                  },
+    "handoff":  {
+                    "skill03_local_ui_approval":  "docs\\planning\\03-local-ui-approval-skill03-brain-20260730-1513.json",
+                    "next_stage":  "04 initial_content_preparation"
+                }
+}

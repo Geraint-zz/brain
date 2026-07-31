@@ -1,0 +1,18 @@
+﻿{
+    "schema_version":  "v1",
+    "skill_id":  "03",
+    "site_id":  "brain",
+    "status":  "APPROVE_SKILL03_LOCAL_UI",
+    "approved_at":  "2026-07-30T07:13:10.9836345Z",
+    "approval_text":  "APPROVE_SKILL03_LOCAL_UI",
+    "preview_url":  "http://127.0.0.1:4321/",
+    "validated":  [
+                      "npm run check",
+                      "npm run build",
+                      "canonical",
+                      "robots",
+                      "sitemap",
+                      "mobile CSS",
+                      "Legal pages"
+                  ]
+}

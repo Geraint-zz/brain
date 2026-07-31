@@ -1,0 +1,11 @@
+﻿{
+    "schema_version":  "v1",
+    "site_id":  "brain",
+    "run_id":  "skill02-brain-20260730-144422",
+    "status":  "SKIP_USER_APPROVED",
+    "screenshots":  [
+
+                    ],
+    "skip_evidence_path":  "docs/planning/02-screenshot-evidence-skip-skill02-brain-20260730-144422.json",
+    "reason":  "User explicitly approved screenshot regeneration skip before production source lock."
+}
