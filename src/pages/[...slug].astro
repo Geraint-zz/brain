@@ -15,7 +15,7 @@ const category = categories.find((x) => x.slug === slug);
 const post = posts.find((x) => x.slug === slug);
 const sectionCategories = categories.filter((x) => x.section_slug === slug);
 const categoryPosts = posts.filter((x) => x.category_slug === slug);
-const displayLabel = (value: string) => value.replaceAll('-', ' ').replace(/\\b\\w/g, (char) => char.toUpperCase());
+const displayLabel = (value: string) => value.replaceAll('-', ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 const categoryLabel = category ? displayLabel(category.slug) : undefined;
 
 const legalPages = {
