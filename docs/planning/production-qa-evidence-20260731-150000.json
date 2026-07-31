@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "skill_id": "07",
+  "site_id": "brain",
+  "run_id": "20260731-150000",
+  "production_origin": "https://brain-9do.pages.dev",
+  "checked_at": "2026-07-31",
+  "status": "BLOCKED_PRODUCTION_QA",
+  "routes": {"/": 404, "/section/everyday-cognitive-health/": 404, "/category/memory/": 404, "/post/how-to-focus-better/": 404, "/about/": 404, "/privacy-policy/": 404, "/terms/": 404, "/user-agreement/": 404, "/sitemap.xml": 404, "/robots.txt": 200},
+  "dom_parity": "NOT_RUN",
+  "canonical_parity": "NOT_RUN",
+  "image_dom": "NOT_RUN",
+  "blockers": ["Production homepage returns 404.", "All sampled semantic and Legal routes return 404.", "sitemap.xml returns 404.", "Returned robots.txt is platform default content, not the Brain sitemap policy."],
+  "next_action": "Bind Cloudflare Pages project brain-9do to GitHub main at commit ec0aa4292e3c90d4c9e3e0164c5510af92300218 and redeploy; then rerun production QA."
+}
