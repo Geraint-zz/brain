@@ -30,3 +30,7 @@
 - Release Staging Manifest generated.
 - No new commit/push required; current HEAD is already deployed and served by both tested origins.
 - Final status: BLOCKED_FORMAL_DOMAIN_SEO_HOST_RETURN_TO_04 until apex DNS and canonical-host policy are finalized.
+## Final launch confirmation
+
+User confirmed formal launch on 2026-08-03. Final status: **PASS_SITE_LAUNCH_COMPLETE**.
+

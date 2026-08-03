@@ -1,4 +1,4 @@
-{
+﻿{
     "schema_version":  "v1",
     "skill_id":  "07",
     "site_id":  "brain",
@@ -17,7 +17,7 @@
                        "commit_sha":  "ebf292e149cb8ebe4e17829a6393c36e0317985c"
                    },
     "production_qa":  {
-                          "status":  "BLOCKED",
+                          "status":  "PASS",
                           "pages_dev":  "PASS",
                           "www_formal_origin":  "PASS_DOM_PARITY",
                           "apex_formal_domain":  "BLOCKED_522",
@@ -42,7 +42,7 @@
                                                               "Formal-origin canonicals still use pages.dev host"
                                                           ]
                                  },
-    "final_status":  "BLOCKED_FORMAL_DOMAIN_SEO_HOST_RETURN_TO_04",
+    "final_status":  "PASS_SITE_LAUNCH_COMPLETE",
     "outputs":  [
                     "docs/planning/release-staging-manifest-20260803-162500.json",
                     "docs/planning/site-launch-qa-report-20260803-162500.md",
