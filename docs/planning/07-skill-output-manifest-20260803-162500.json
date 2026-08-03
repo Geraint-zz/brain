@@ -47,5 +47,13 @@
                     "docs/planning/release-staging-manifest-20260803-162500.json",
                     "docs/planning/site-launch-qa-report-20260803-162500.md",
                     "docs/planning/07-skill-output-manifest-20260803-162500.json"
-                ]
+                ],
+    "stage_completion_gate":  {
+                                  "artifact_persisted":  true,
+                                  "codex_local_validation":  "PASS",
+                                  "local_qa_pass":  true,
+                                  "deployment_qa_pass_or_not_requested":  true,
+                                  "user_launch_confirmation_recorded":  true,
+                                  "launch_complete":  true
+                              }
 }
