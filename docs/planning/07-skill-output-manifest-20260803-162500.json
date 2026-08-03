@@ -13,15 +13,16 @@
     "deployment":  {
                        "status":  "SERVING_BOTH_ORIGINS",
                        "pages_dev":  "https://brain-9do.pages.dev",
-                       "formal_origin":  "https://www.brainhealth123.net",
-                       "commit_sha":  "ebf292e149cb8ebe4e17829a6393c36e0317985c"
+                       "formal_origin":  "https://brainhealth123.net",
+                       "commit_sha":  "2787fd4d8eb5125c760e33ec0bd02da25e145b0b"
                    },
     "production_qa":  {
                           "status":  "PASS",
                           "pages_dev":  "PASS",
-                          "www_formal_origin":  "PASS_DOM_PARITY",
-                          "apex_formal_domain":  "BLOCKED_522",
-                          "canonical_parity":  "BLOCKED_FORMAL_SEO_HOST",
+                          "formal_domain":  "PASS",
+                          "dom_parity":  "PASS",
+                          "canonical_parity":  "PASS",
+                          "image_dom":  "PASS",
                           "sitemap":  "PASS",
                           "robots":  "PASS"
                       },
@@ -36,10 +37,9 @@
                                      "staged_matches_allowlist":  true,
                                      "local_qa_pass":  true,
                                      "commit_authorization_received":  true,
-                                     "commit_ready_for_user_approval":  false,
+                                     "commit_ready_for_user_approval":  true,
                                      "blocking_reasons":  [
-                                                              "Apex brainhealth123.net returns 522",
-                                                              "Formal-origin canonicals still use pages.dev host"
+
                                                           ]
                                  },
     "final_status":  "PASS_SITE_LAUNCH_COMPLETE",

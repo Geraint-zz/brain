@@ -31,10 +31,10 @@
                 "repository_present":  true,
                 "remote":  "https://github.com/Geraint-zz/brain.git",
                 "branch":  "main",
-                "head":  "ebf292e149cb8ebe4e17829a6393c36e0317985c",
-                "staging_performed":  false,
-                "commit_performed":  false,
-                "push_performed":  false,
+                "head":  "2787fd4d8eb5125c760e33ec0bd02da25e145b0b",
+                "staging_performed":  true,
+                "commit_performed":  true,
+                "push_performed":  true,
                 "broad_add_commands_used":  false
             },
     "cloudflare":  {
@@ -43,7 +43,7 @@
                        "formal_domain":  "https://brainhealth123.net",
                        "www_domain":  "https://www.brainhealth123.net",
                        "deployment":  "SERVING",
-                       "production_dom_parity":  "PASS_WWW_BLOCKED_APEX_AND_CANONICAL"
+                       "production_dom_parity":  "PASS"
                    },
     "next_stage":  "COMPLETE"
 }
