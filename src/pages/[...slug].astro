@@ -2,6 +2,8 @@
 import sections from '../data/sections.json';
 import categories from '../data/categories.json';
 import posts from '../data/posts.json';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 export function getStaticPaths() {
   const legalRoutes = ['about','privacy-policy','terms','user-agreement']; const routeList = sections.map((x) => 'section/' + x.slug).concat(categories.map((x) => 'category/' + x.slug), posts.map((x) => 'post/' + x.slug), legalRoutes);
   return routeList.map((route) => ({ params: { slug: route } }));
@@ -18,6 +20,12 @@ const categoryPosts = posts.filter((x) => x.category_slug === slug);
 const categoryRelatedPosts = category ? posts.filter((x) => x.section_slug === category.section_slug).slice(0, 3) : [];
 const displayLabel = (value: string) => value.replaceAll('-', ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 const categoryLabel = category ? displayLabel(category.slug) : undefined;
+const sectionDescriptions: Record<string, string> = {
+  'everyday-cognitive-health': 'Practical foundations for memory, attention, thinking skills, and healthy daily routines.',
+  'audience-programs': 'Evidence-aware guidance shaped for students, demanding workplaces, and healthy aging.',
+  'tools-reviews': 'Neutral frameworks for evaluating brain-training tools, learning resources, and cognitive programs.',
+  'research-industry': 'Research explainers, expert perspectives, and market context for the evolving brain-health field.',
+};
 const categoryDescriptions: Record<string, string> = { memory: 'Evidence-informed methods for learning, recall, and everyday memory support.', focus: 'Practical approaches to attention, concentration, and mental energy.', 'brain-health-habits': 'Daily routines that support sleep, movement, stress balance, and cognitive well-being.', 'thinking-skills': 'Exercises and explanations for reasoning, flexibility, and clear decision-making.', students: 'Study strategies for memory, focus, and sustainable learning.', workplace: 'Cognitive energy and attention practices for demanding workdays.', 'older-adults': 'Brain-health routines and memory support across healthy aging.', 'brain-training-tools': 'Neutral reviews of apps, games, books, and cognitive training tools.', 'industry-research': 'Research explainers and market context for brain-health professionals.' };
 
 const legalPages = {
@@ -28,6 +36,104 @@ const legalPages = {
 };
 const legal = legalPages[slug as keyof typeof legalPages];
 const title = legal?.title ?? section?.name ?? categoryLabel ?? post?.title ?? displayLabel(slug);
-const description = legal?.description ?? post?.excerpt ?? 'Evidence-informed Brain content.';
+const description = legal?.description ?? post?.excerpt ?? categoryDescriptions[slug] ?? sectionDescriptions[slug] ?? 'Evidence-informed Brain content.';
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content={description}><link rel="canonical" href={new URL(Astro.url.pathname,'https://brainhealth123.net')}><title>{title} | Brain</title><link rel="stylesheet" href="/assets/styles/brain-local.css"></head><body><header><a class="brand-lockup" href="/"><img class="brand-mark" src="/assets/images/brain-logo.png" alt="" aria-hidden="true"><strong>Brain</strong></a><nav><a href="/section/everyday-cognitive-health/">Everyday Cognitive Health</a><a href="/section/audience-programs/">Audience Programs</a><a href="/section/tools-reviews/">Tools &amp; Reviews</a><a href="/section/research-industry/">Research &amp; Industry</a></nav><a href="/about/">About</a></header><main><p class="eyebrow">{kind === 'post' ? 'ARTICLE' : kind === 'category' ? 'CATEGORY' : 'SECTION'}</p><h1>{title}</h1><p class="lead">{description}</p>{kind === 'section' && sectionCategories.length > 0 && <section class="explore-section"><h2>Explore this section</h2><div class="cards">{sectionCategories.map((item) => <a class="card" href={'/category/' + item.slug + '/'}><img class="section-card-image" src={`/assets/images/category-${item.slug}.png`} alt={`${displayLabel(item.slug)} editorial illustration`}><p class="eyebrow">{posts.filter((postItem) => postItem.category_slug === item.slug).length} articles</p><h3>{displayLabel(item.slug)}</h3><p>{categoryDescriptions[item.slug] ?? ''}</p>{posts.find((postItem) => postItem.category_slug === item.slug) ? <p class="card-featured">Featured: {posts.find((postItem) => postItem.category_slug === item.slug)?.title}</p> : <p class="card-featured">Related guidance from this section</p>}<span>Explore category <strong class="solid-arrow" aria-hidden="true">➜</strong></span></a>)}</div></section>}{kind === 'category' && categoryPosts.length > 0 && <section><h2>Articles in this category</h2><div class="cards">{categoryPosts.map((item) => <a class="card" href={'/post/' + item.slug + '/'}><p class="eyebrow">{item.published_at.slice(0,10)}</p><h3>{item.title}</h3><p>{item.excerpt}</p><span>Read article <strong class="solid-arrow" aria-hidden="true">➜</strong></span></a>)}</div></section>}{kind === 'category' && categoryPosts.length === 0 && categoryRelatedPosts.length > 0 && <section><h2>Related guidance</h2><div class="cards">{categoryRelatedPosts.map((item) => <a class="card" href={'/post/' + item.slug + '/'}><p class="eyebrow">{displayLabel(item.category_slug)}</p><h3>{item.title}</h3><p>{item.excerpt}</p><span>Read article <strong class="solid-arrow" aria-hidden="true">➜</strong></span></a>)}</div></section>}{kind === 'post' && post && <article class="article-content"><p class="eyebrow">{displayLabel(post.category_slug)}</p><p>Published {post.published_at.slice(0,10)}</p><img src={'/assets/images/' + post.slug + '/featured.png'} alt={post.image_alt}><div set:html={post.body}></div><img src={'/assets/images/' + post.slug + '/closing.png'} alt={post.title + ' closing image'}><p class="disclaimer">{post.disclaimer}</p></article>}{legal && <article class="legal-content">{legal.sections.map(([heading, body]) => <section><h2>{heading}</h2><p>{body}</p></section>)}</article>}{!legal && kind !== 'post' && kind !== 'category' && kind !== 'section' && <p>Brain provides general educational information. It does not provide medical advice, diagnosis, treatment, or emergency guidance.</p>}</main><footer>General educational information only. <a href="/about/">About</a> · <a href="/privacy-policy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/user-agreement/">User Agreement</a></footer><script src="/assets/scripts/analytics-consent.js" defer is:inline></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://brainhealth123.net')} />
+    <title>{title} | Brain</title>
+    <link rel="stylesheet" href="/assets/styles/brain-local.css" />
+  </head>
+  <body>
+    <SiteHeader />
+    <main class:list={[kind === 'post' && 'article-main', legal && 'legal-main']}>
+      <header class="page-intro" data-reveal>
+        <p class="eyebrow">{kind === 'post' ? 'Article' : kind === 'category' ? 'Category' : legal ? 'Brain standards' : 'Section'}</p>
+        <h1>{title}</h1>
+        <p class="lead">{description}</p>
+      </header>
+
+      {kind === 'section' && sectionCategories.length > 0 && (
+        <section class="explore-section" data-reveal>
+          <div class="section-heading compact">
+            <p class="eyebrow">Browse by topic</p>
+            <h2>Explore this section</h2>
+          </div>
+          <div class="cards">
+            {sectionCategories.map((item, index) => {
+              const featuredPost = posts.find((postItem) => postItem.category_slug === item.slug);
+              const articleCount = posts.filter((postItem) => postItem.category_slug === item.slug).length;
+              return (
+                <a class="card topic-card" href={'/category/' + item.slug + '/'}>
+                  <div class="image-wrap"><img class="section-card-image" src={`/assets/images/category-${item.slug}.png`} alt={`${displayLabel(item.slug)} editorial illustration`} /></div>
+                  <div class="card-topline"><span>0{index + 1}</span><span>{articleCount || 'Related'} {articleCount === 1 ? 'article' : 'articles'}</span></div>
+                  <h3>{displayLabel(item.slug)}</h3>
+                  <p>{categoryDescriptions[item.slug] ?? ''}</p>
+                  <p class="card-featured">{featuredPost ? `Featured — ${featuredPost.title}` : 'Selected guidance from this section'}</p>
+                  <span class="text-link">Explore category <strong aria-hidden="true">→</strong></span>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {kind === 'category' && categoryPosts.length > 0 && (
+        <section class="content-list" data-reveal>
+          <div class="section-heading compact"><p class="eyebrow">Reading list</p><h2>Articles in this category</h2></div>
+          <div class="cards article-cards">
+            {categoryPosts.map((item, index) => (
+              <a class="card article-card" href={'/post/' + item.slug + '/'}>
+                <div class="card-topline"><span>0{index + 1}</span><time>{item.published_at.slice(0,10)}</time></div>
+                <h3>{item.title}</h3>
+                <p>{item.excerpt}</p>
+                <span class="text-link">Read article <strong aria-hidden="true">→</strong></span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {kind === 'category' && categoryPosts.length === 0 && categoryRelatedPosts.length > 0 && (
+        <section class="content-list" data-reveal>
+          <div class="section-heading compact"><p class="eyebrow">Selected reading</p><h2>Related guidance</h2></div>
+          <div class="cards article-cards">
+            {categoryRelatedPosts.map((item, index) => (
+              <a class="card article-card" href={'/post/' + item.slug + '/'}>
+                <div class="card-topline"><span>0{index + 1}</span><span>{displayLabel(item.category_slug)}</span></div>
+                <h3>{item.title}</h3>
+                <p>{item.excerpt}</p>
+                <span class="text-link">Read article <strong aria-hidden="true">→</strong></span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {kind === 'post' && post && (
+        <article class="article-content" data-reveal>
+          <div class="article-meta"><span>{displayLabel(post.category_slug)}</span><time>Published {post.published_at.slice(0,10)}</time></div>
+          <figure class="article-image"><img src={'/assets/images/' + post.slug + '/featured.png'} alt={post.image_alt} /></figure>
+          <div class="prose" set:html={post.body}></div>
+          <figure class="article-image closing"><img src={'/assets/images/' + post.slug + '/closing.png'} alt={post.title + ' closing image'} /></figure>
+          <p class="disclaimer">{post.disclaimer}</p>
+        </article>
+      )}
+
+      {legal && (
+        <article class="legal-content" data-reveal>
+          {legal.sections.map(([heading, body], index) => (
+            <section><span>0{index + 1}</span><div><h2>{heading}</h2><p>{body}</p></div></section>
+          ))}
+        </article>
+      )}
+    </main>
+    <SiteFooter />
+    <script src="/assets/scripts/site-ui.js" defer is:inline></script>
+    <script src="/assets/scripts/analytics-consent.js" defer is:inline></script>
+  </body>
+</html>

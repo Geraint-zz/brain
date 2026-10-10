@@ -1,10 +1,71 @@
 ---
-const site='https://brainhealth123.net';
-const sections=[
-  ['everyday-cognitive-health','Everyday Cognitive Health','Practical foundations for memory, attention, and healthy daily routines.'],
-  ['audience-programs','Audience Programs','Guidance tailored for students, workplaces, and healthy aging.'],
-  ['tools-reviews','Tools & Reviews','Neutral evaluation frameworks for brain-training tools and learning resources.'],
-  ['research-industry','Research & Industry','Market context, expert perspectives, and research explainers.']
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+const site = 'https://brainhealth123.net';
+const sections = [
+  ['everyday-cognitive-health', 'Everyday Cognitive Health', 'Practical foundations for memory, attention, and healthy daily routines.'],
+  ['audience-programs', 'Audience Programs', 'Guidance tailored for students, workplaces, and healthy aging.'],
+  ['tools-reviews', 'Tools & Reviews', 'Neutral evaluation frameworks for brain-training tools and learning resources.'],
+  ['research-industry', 'Research & Industry', 'Market context, expert perspectives, and research explainers.'],
 ];
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Evidence-informed cognitive health guides, neutral reviews, and research context from Brain."><link rel="canonical" href={new URL(Astro.url.pathname,site)}><title>Brain | Evidence-informed cognitive health</title><link rel="stylesheet" href="/assets/styles/brain-local.css"></head><body><header><a class="brand-lockup" href="/" aria-label="Brain home"><img class="brand-mark" src="/assets/images/brain-logo.png" alt="" aria-hidden="true"><strong>Brain</strong></a><nav>{sections.map(([, title]) => <a href={`/section/${title.toLowerCase().replaceAll(' & ','-').replaceAll(' ','-')}/`}>{title}</a>)}</nav><a href="/about/">About</a></header><main><section class="hero"><div><p class="eyebrow">EVIDENCE-INFORMED BRAIN HEALTH</p><h1>Clearer thinking, grounded in evidence.</h1><p class="lead">Practical guides, neutral tools reviews, and research context for everyday cognitive health.</p><a class="button" href="/section/everyday-cognitive-health/">Explore the guides</a></div><img src="/assets/images/focus-cover.png" alt="A calm editorial study setting with an open notebook"></section><section><p class="eyebrow">INTELLIGENCE REPOSITORY</p><h2>Start with the question that matters to you.</h2><div class="cards">{sections.map(([slug,title,description]) => <a class="card" href={`/section/${slug}/`}><img class="section-card-image" src={`/assets/images/sections-${slug}.png`} alt={`${title} editorial illustration`}><p class="eyebrow">SECTION</p><h3>{title}</h3><p>{description}</p><span>Explore <strong class="solid-arrow" aria-hidden="true">➜</strong></span></a>)}</div></section><section class="mission"><p class="eyebrow">EDITORIAL PROMISE</p><h2>Useful context, clear limits, and a disciplined respect for evidence.</h2><p>Brain distinguishes everyday educational guidance from clinical care. For urgent or individual health concerns, seek qualified professional help.</p></section></main><footer>General educational information only. <a href="/about/">About</a> <strong class="solid-arrow" aria-hidden="true">➜</strong> <a href="/privacy-policy/">Privacy</a> <strong class="solid-arrow" aria-hidden="true">➜</strong> <a href="/terms/">Terms</a> <strong class="solid-arrow" aria-hidden="true">➜</strong> <a href="/user-agreement/">User Agreement</a></footer><script src="/assets/scripts/analytics-consent.js" defer is:inline></script></body></html>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Evidence-informed cognitive health guides, neutral reviews, and research context from Brain." />
+    <link rel="canonical" href={new URL(Astro.url.pathname, site)} />
+    <title>Brain | Evidence-informed cognitive health</title>
+    <link rel="stylesheet" href="/assets/styles/brain-local.css" />
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <section class="hero" data-reveal>
+        <div class="hero-copy">
+          <p class="eyebrow">Evidence-informed brain health</p>
+          <h1>Clearer thinking,<br /><em>grounded</em> in evidence.</h1>
+          <p class="lead">Practical guides, neutral tools reviews, and research context for everyday cognitive health.</p>
+          <a class="button" href="/section/everyday-cognitive-health/">Explore the guides <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="hero-visual">
+          <img src="/assets/images/focus-cover.png" alt="A calm editorial study setting with an open notebook" />
+          <figcaption><span>01</span> A more considered way to think about cognition.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section-index" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Intelligence repository</p>
+          <h2>Start with the question<br />that matters to you.</h2>
+          <p>Four editorial pathways connect everyday practice with credible research and careful evaluation.</p>
+        </div>
+        <div class="cards section-cards">
+          {sections.map(([slug, title, description], index) => (
+            <a class="card section-card" href={`/section/${slug}/`}>
+              <div class="image-wrap"><img class="section-card-image" src={`/assets/images/sections-${slug}.png`} alt={`${title} editorial illustration`} /></div>
+              <div class="card-topline"><span>0{index + 1}</span><span>Section</span></div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <span class="text-link">Explore <strong aria-hidden="true">→</strong></span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="mission" data-reveal>
+        <div>
+          <p class="eyebrow">Editorial promise</p>
+          <h2>Useful context. Clear limits. Respect for evidence.</h2>
+        </div>
+        <p>Brain distinguishes everyday educational guidance from clinical care. For urgent or individual health concerns, seek qualified professional help.</p>
+      </section>
+    </main>
+    <SiteFooter />
+    <script src="/assets/scripts/site-ui.js" defer is:inline></script>
+    <script src="/assets/scripts/analytics-consent.js" defer is:inline></script>
+  </body>
+</html>

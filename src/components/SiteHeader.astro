@@ -1,0 +1,28 @@
+---
+const sections = [
+  ['everyday-cognitive-health', 'Everyday Cognitive Health'],
+  ['audience-programs', 'Audience Programs'],
+  ['tools-reviews', 'Tools & Reviews'],
+  ['research-industry', 'Research & Industry'],
+];
+---
+
+<header class="site-header">
+  <a class="brand-lockup" href="/" aria-label="Brain home">
+    <img class="brand-mark" src="/assets/images/brain-logo.png" alt="" aria-hidden="true" />
+    <strong>Brain</strong>
+  </a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    {sections.map(([slug, title]) => <a href={`/section/${slug}/`}>{title}</a>)}
+  </nav>
+  <a class="about-link" href="/about/">About</a>
+  <details class="mobile-nav">
+    <summary aria-label="Open navigation"><span></span><span></span></summary>
+    <nav aria-label="Mobile navigation">
+      {sections.map(([slug, title], index) => (
+        <a href={`/section/${slug}/`}><small>0{index + 1}</small>{title}</a>
+      ))}
+      <a href="/about/"><small>05</small>About</a>
+    </nav>
+  </details>
+</header>
